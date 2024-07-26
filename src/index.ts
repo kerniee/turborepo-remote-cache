@@ -7,9 +7,9 @@ const app = createApp({
   trustProxy: true,
   // Default is 1MB
   // https://fastify.dev/docs/latest/Reference/Server/#bodylimit
-  // Here, we raise it to 50 MB (50 * 1024 * 1024).
+  // Here, we raise it to 5000 MB (5000 * 1024 * 1024).
   // number is measured in Bytes
-  bodyLimit: 52428800,
+  bodyLimit: 5242880000,
 })
 
 closeWithGrace(
